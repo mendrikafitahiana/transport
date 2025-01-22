@@ -1,0 +1,43 @@
+# Dépendances
+node_modules/
+
+# Fichiers de logs
+logs
+*.log
+npm-debug.log*
+
+# Fichiers d'environnement
+.env
+.env.local
+.env.*.local
+
+# Fichiers de build
+dist/
+build/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers d'éditeur
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Fichiers de couverture de tests
+coverage/
+
+# Fichiers temporaires
+tmp/
+temp/
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
+
+# Autres
+*.pid
+*.seed
+*.pid.lock
+serviceAccountKey.json
