@@ -15,7 +15,9 @@ CREATE TABLE IF NOT EXISTS semaine (
   date_debut DATE NOT NULL,
   date_fin DATE NOT NULL,
   numero_semaine INT NOT NULL,
+  mois INT NOT NULL,
   annee INT NOT NULL,
+  unique_identifier VARCHAR(50) UNIQUE,
   date_creation TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -27,6 +29,6 @@ CREATE TABLE IF NOT EXISTS planning (
   ramassage_heure TIME,
   depot_heure TIME,
   ramassage_status BOOLEAN DEFAULT false, -- off (true) ou non (false)
-  depot_status BOOLEAN DEFAULT false, -- off (true) ou non (false)
+  depot_status BOOLEAN DEFAULT false -- off (true) ou non (false)
 );
 
